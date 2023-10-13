@@ -1,0 +1,461 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul{
+        list-style: none;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.87rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1.325rem;
+    }
+    h6{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .flex {
+        display: flex;
+    }
+    .justify-between{
+        justify-content: space-between;
+    }
+    .justify-start{
+        justify-content: start;
+    }
+    .justify-center{
+        justify-content: center;
+    }
+    .justify-end{
+        justify-content: end;
+    }
+    .items-center {
+        align-items: center;
+    }
+    .items-start {
+        align-items: start;
+    }
+    .items-end {
+        align-items: end;
+    }
+    .py-2{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .py-3{
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+    .pt-2{
+        padding-top: .5rem;
+    }
+    .py-1{
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+    }
+    .pb-1{
+        padding-bottom: .2rem;
+    }
+    .pt-1{
+        padding-top: .2rem;
+    }
+    .gap-2{gap: .5rem;}
+    .gap-1{gap: .2rem;}
+    .gap-4{gap: 1rem;}
+    .gap-6{gap: 1.5rem;}
+    .w-60{
+        width: 60%;
+    }
+    .w-40{
+        width: 40%;
+    }
+    .box{
+        margin-top: 1rem;
+        border: 10px solid #F5F5F5;
+        padding: 1rem;
+        box-shadow: 10px 10px #C7C7C7;
+    }
+    .text-blue{
+        color: #5f9abc;
+    }
+    .text-red{
+        color: #d56c68;
+    }
+    .text-gray{
+        color: #717c80;
+    }
+    .border-dd{
+        border-bottom: 1px solid #dddddd;
+    }
+    .border-t-dd{
+        border-top: 1px solid #dddddd;
+    }
+    .mt-2{margin-top: .5rem;}
+    .mt-3{margin-top: .75rem;}
+    .font-normal{
+        font-weight: normal;
+    }
+    .pt-8{
+        padding-top: 2rem;
+    }
+    .z-1{
+        z-index: 1;
+    }
+    .z-2{
+        z-index: 2;
+    }
+    .relative{
+        position: relative;
+    }
+    .yellow-line{
+        background-color: #f6c545;
+    width: 100%;
+    border-radius: 10px;
+    height: 8px;
+    position: absolute;
+    }
+    .flex-column{
+        flex-direction: column;
+    }
+    .fs-6{
+        font-size: 1rem;
+    }
+    .fw-bold{
+        font-weight: bold;
+    }
+    .text-uppercase{
+        text-transform: uppercase;
+    }
+    .fs-14{font-size: 14px;}
+    .w-70px{width: 70px;}
+    .rt-box{
+        background-color: #e6f7fe;
+    border-top: 5px solid #bbdefc;
+    padding: 1rem;
+    min-height: 97%;
+    border-bottom: 5px solid #bbdefc;
+    position: relative;
+    }
+    .border-t-c8{
+        border-top: 1px solid #c8d9e1;
+    }
+    .pt-3{padding-top: .75rem;}
+    .pt-4{padding-top: 1rem;}
+    .mt-12{margin-top: 3rem;}
+    .w-50{width: 50%;}
+    .track{
+        border-radius: 5px;
+        background-color: #64b75d;
+        padding: 2px 8px;
+        color: #fff;
+        display: inline-block;
+        margin-top: .2rem;
+    }
+    .mt-4{margin-top: 1rem;}
+    .no-track{
+        background-color: #5c7b8f;
+    }
+    .f-text{
+        position: absolute;
+        width: 80%;
+        bottom: 20px;
+    }
+    .bg-254c4b{
+        background-color: #254c4b;
+    }
+    .text-white{color: #fff;}
+</style>
+<body>
+    <div class="container">
+        <div class="box ">
+        
+            <div class="flex justify-between pt-2 border-dd pb-1">
+                <h1 class="text-blue font-normal">
+                    AFTER VISIT SUMMARY
+                </h1>
+                <img src="images/epic.png" width="93px" alt="">
+            </div>
+
+            <div class="flex justify-between py-1">
+                <p>Chris Heit, MRN: 55565</p>
+                <div class="flex gap-2">
+                    <div>
+                        <img src="" alt="">
+                        10/25/2017
+                    </div>
+                    <div>
+                        <img src="" alt="">
+                        10/25/2017
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-6 pt-8">
+                <div class="w-60">
+                    <div class="flex justify-center items-center relative ">
+                        <span class="yellow-line z-1"></span>
+                        <img src="images/profile-img.jpg" class="relative z-2" alt="">
+                    </div>
+                    <h1 class="text-red pt-2 font-normal">Instructions <span class="fs-6">from Chris Heit, MD</span></h1>
+                    <h5 class="py-2 font-normal border-dd">To address your congestive heart failure, i'd like you to start exercising
+                        more often and eating healthier. In addition you need to work on 
+                        controlling your hypertension with the medications I've prescribed you.
+                        I've ordered a few labs and referred you to a cardiologist so we can try
+                        to get your CHF and Hypertension under control.</h5>
+
+                    <div class="pt-2 flex gap-2">
+                        <div>
+                            <img src="images/ic-med.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="text-red font-normal">Today's medication changes</h4>
+                            <p class="pt-2 flex gap-2"><img src="images/ic-arrow.jpg" alt=""> <span>Start</span> taking:</p>
+                            
+                            <div class="pt-2 flex flex-column gap-1">
+                                <p>furosemide 40 mg tablet <span class="text-gray">(LASIX)</span></p>
+                                <p>ibuprofen 800 mg tablet <span class="text-gray">(MOTRIN)</span></p>
+                                <p>traMADol 50 mg tablet <span class="text-gray">(ULTRAM)</span></p>
+                            </div>
+                            <p class="pt-8">Accurate as of October 25 11:59 PM</p>
+                            <p class="fw-bold">Review your updated medication list below</p>
+                        </div>
+                    </div>
+                    <div class="border-t-dd py-3 mt-3 flex gap-2">
+                        <div>
+                            <img src="images/ic-attatchment.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="text-red font-normal">Read the attached information</h4>
+                            <p class="text-uppercase">ADULT ADVISOR: HEART DISEASE PREVENTION (ENGLISH)</p>
+                        </div>
+                    </div>
+                    <div class="border-t-dd py-3 mt-3 flex gap-2"">
+                        <div>
+                            <img src="images/ic-cart.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="text-red font-normal">Pick up these medications at UIHC General Hospital Pharmacy</h4>
+                            <p>Furosemide - traMADol</p>
+                            <div class="flex gap-2 pt-1">
+                                <p class="w-70px fs-14 text-gray">Address:</p>
+                                <p class="fs-14 text-gray">200 Hawkins Dr, loea city IA 52242</p>
+                            </div>
+                            <div class="flex gap-2 pt-1">
+                                <p class="w-70px fs-14 text-gray">Hours:</p>
+                                <p class="fs-14 text-gray">Monday to Friday: 7:30 am - 6:00 pm; Saturday: 9:00 am - 1:00 pm Sunday: Closed</p>
+                            </div>
+                            <div class="flex gap-2 pt-1">
+                                <p class="w-70px fs-14 text-gray">Phone:</p>
+                                <p class="fs-14 text-gray">319-384-6800</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t-dd py-3 mt-3 flex gap-2">
+                        <div>
+                            <img src="images/ic-calander.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4 class="text-red font-normal">Return in about 4 weeks</h4>
+                            <p>(around 11/22/2018)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center relative py-3">
+                        <span class="yellow-line z-1"></span>
+                    </div>
+
+                    <div class="pt-8">
+                        <h1 class="text-blue font-normal">What is Next</h1>
+                        <div class="flex gap-4">
+                            <div>
+                                <p class="text-blue">Nov</p>
+                                <h3 class="text-blue">25</h3>
+                                <p class="text-blue">2014</p>
+                            </div>
+                            <div>
+                                <h4 class="text-blue font-normal">Echocardiogram</h4>
+                                <p>Friday November 25 3:00 PM</p>
+                                <p class="text-gray">Please arrive at least 30 min. before scheduled appointment.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mt-3">
+                            <div>
+                                <p class="text-blue">Nov</p>
+                                <h3 class="text-blue">18</h3>
+                                <p class="text-blue">2014</p>
+                            </div>
+                            <div>
+                                <h4 class="text-blue font-normal">Office Visit with Vijay Shah, MD</h4>
+                                <p>Friday November 18 4:45 AM (Arrive by 4:30 AM)</p>
+                                <p class="text-gray">Please arrive 6 minutes early to fill out any necessary paperwork before the appointment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-40">
+                    <div class="rt-box">
+                        
+                        <h1 class="text-blue font-normal">Today's Visit</h1>
+                        <p class="py-2">You saw Chirs Heit on Tuesday Oct 25, 2016 for : Heart Failure: Lipids, and Hypertension</p>
+                        <div class="border-t-c8 mt-3 pt-8 flex gap-8">
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-heart.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">Blood Presure</p>
+                                    <h3 class="font-normal">122/84</h3>
+                                </div>
+                            </div>
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-user.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">BMI</p>
+                                    <h3 class="font-normal">27.53</h3>
+                                </div>
+                            </div>
+                            </div>
+                            <div class=" mt-4 flex gap-4">
+
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-weight.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">Weight</p>
+                                    <h3 class="font-normal">181 lb</h3>
+                                </div>
+                            </div>
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-height.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">Height</p>
+                                    <h3 class="font-normal">5'7.99"</h3>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class=" mt-4 flex gap-4">    
+                            
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-temp.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">Temperature (Tympanic)</p>
+                                    <h3 class="font-normal">98.5 F</h3>
+                                </div>
+                            </div>
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-h.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">Pulse</p>
+                                    <h3 class="font-normal">75</h3>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="mt-4 flex gap-4">    
+                            
+                            <div class="w-50 flex gap-2">
+                                <div><img src="images/ic-l.jpg" alt=""></div>
+                                <div>
+                                    <p class="text-gray">Respiration</p>
+                                    <h3 class="font-normal">18</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t-c8 mt-4 pt-4 flex gap-4">
+                            <div><img src="images/ic-focus.jpg" alt=""></div>
+                            <div>
+                                <div>
+                                    <h3 class="text-blue font-normal">Goals discussed today</h3>
+                                    <h5 class="font-normal">Decrease soda or juice intake</h5>
+                                    <span class="track no-track fs-14">Not on track</span>
+                                </div>
+                                <div class="pt-2">
+                                    <h5 class="font-normal">Eat more fruits and vegetables</h5>
+                                    <span class="track fs-14">on track</span>
+                                </div>
+                                <div class="pt-2">
+                                    <h5 class="font-normal">Increase Physical activity</h5>
+                                    <span class="track no-track fs-14">Not on track</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 flex gap-4">
+                            <div><img src="images/ic-box.jpg" alt=""></div>
+                            <div>
+                                <div>
+                                    <h3 class="text-blue font-normal">Done Today</h3>
+                                    <h5 class="font-normal">CBC (COMPLETE BLOOD COUNT)</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-8 mt-12 f-text">
+                            <h1 class="text-blue font-normal">MyChart Signup</h1>
+                            <p>View your After Visit Summary and more 
+                                online at <a href="" class="text-blue">ulhc.org/mychart</a>. If you have
+                                questions, please call 800-777-8442
+                                to speak with our MyChart staff.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 flex justify-end items-end">
+                <img src="images/epic.png" width="50px" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex py-3 justify-center items-center mt-4 bg-254c4b">
+        <h3 class="text-white">The AVS has new features!</h3>
+    </div>
+<div class="container">
+    <div class="flex gap-4 mt-12">
+        <div class="w-50">
+            <h1 class="text-blue font-normal">Resultados del examen</h1>
+            <p>Si saordenaron examens, su doctor necesitra tiempo para
+                dias para completarse. Esto quiere decir que puede haber un
+                recibmas las resultados, su</p>
+        </div>
+        <div class="w-50">
+            <h3 class="text-blue font-normal">AFTER VISIT SUMMARY</h3>
+            <h2 class="text-blue font-normal">AFTER VISIT SUMMARY</h2>
+            <h1 class="text-blue font-normal">AFTER VISIT SUMMARY</h1>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
